@@ -70,7 +70,7 @@ $(function () {
     }
 
     //스와이퍼 플러그인
-    let swiperSlide=new Swiper('.Featyred-slide', {
+    let swiperSlide=new Swiper('.Featured-slide', {
         //모바일 기준
         slidesPerView:'auto', //한 화면에 들어오는 사진의 숫자 (auto로 한 이유는)
         spaceBetween: 8, // 여백 8
