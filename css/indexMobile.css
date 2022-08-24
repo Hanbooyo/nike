@@ -1,0 +1,152 @@
+/* 미디어 쿼리 480px 이하에서 적용 (모바일용) css */
+@media screen and (max-width:480px) {
+    .h-top {
+        width: 80%;
+        height: auto;
+        background-color: #fff;
+    }
+    .main-menu {
+        padding: 40px 24px 32px 24px;
+    }
+    .jordan-logo a {
+        padding-left: 24px;
+        margin-bottom: 32px;
+    }
+    .top-menu-area, .customer {
+        padding: 40px 24px;
+    }
+    header {
+        height: 48px;
+    }
+    .logo img {
+        height: 18px;
+    }
+    .sub-menu {
+        padding-top: 40px;
+        padding-left: 24px;
+    }
+    .icon-menu img{
+        height: 20px;
+    }
+    .icon-menu ul li {
+        margin-left: 14px;
+    }
+    .index-wrap {
+        padding: 0 16px;
+    }
+    /* 메인 타이틀 */
+    .main-visual, .content {
+        margin-bottom: 48px;
+    }
+    .title-01 {
+        font-size: 1.5em;
+        padding-top: 24px;
+    }
+    .title-01-text {
+        font-size: 0.8125em;
+        padding: 12px 10px 0 10px;
+    }
+    .title-01-text br {
+        display: none;
+    }
+    .btn-01 {
+        font-size: 0.75em;
+        padding: 4px 16px;
+        margin: 18px 4px 0 4px;
+        border-radius: 13px;
+    }
+    /* 이번주 스타일링 */
+    .content-img-wrap {
+        width: 100%;
+        overflow: scroll;     /*전체가 스크롤되지않게 얘네만 스크롤되게 */
+        /* IE, Edge에서 스크롤바 안 보이게 하는 코딩 */
+        -ms-overflow-style: none;
+    }
+    .content-img-wrap::-webkit-scrollbar {
+        display: none;
+    }
+    .content-img {
+        width: 622px;
+        display: block;
+    }
+    .content-img > .main-img {
+        float: left;
+        margin-right: 8px;
+        width: 202px;
+    }
+    .content-title {
+        font-size: 1em;
+        margin-bottom: 12px;
+    }
+    /* Trending Now 영역 */
+    .trend {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap; /* row인데 (가로) 화면을 벗어나면 내려오라 */
+    }
+    .trend-img {
+        width: 100%; /*부모영역 100% 차지하면서 가로에 1개만 표시*/
+        flex: none;
+    }
+    .trend-img:first-child {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .trend-img > img {
+        width: 100%;
+    }
+    .trend-text {
+        bottom: 18px;
+        left: 18px;
+    }
+    .c-white {
+        margin-bottom: 8px;
+    }
+    .b-white {
+        margin: 0;
+    }
+    /* swiper 슬라이드 */
+    .Featured-slide .swiper-slide {
+        width: 60%; /* 하나 반 정도*/
+    }
+    .featured-title {
+        font-size: 0.8125em;
+        margin-top: 12px;
+    }
+    .featured-text {
+        font-size: 0.6875em;
+        line-height: 14px;
+        margin-top: 4px;
+    }
+    .featured-control {
+        width: 52px;
+        height: 16px;
+        top: 3px;
+    }
+    .f-next, .f-prev {
+        width: 16px;
+        height: 16px;
+        margin-top: 0;
+        top: 0;
+    }
+    .f-prev::after, .f-next::after {
+        font-size: 0.75em;
+        color: #999;
+    }
+    .f-pager {
+        bottom: 1px;
+        font-size: 0.6875em;
+        color: #999;
+    }
+    /* footer */
+    .f-bottom p {
+        box-sizing: border-box;
+        padding: 0 4%;
+    }
+    .inipay br {
+        display: none;
+    }
+    .inipay p:last-child {
+        flex-direction: column;
+    }
+}
